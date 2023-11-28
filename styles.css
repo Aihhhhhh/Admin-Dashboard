@@ -15,60 +15,97 @@
     grid-column: 1/2;
     background-color: blue;
     min-height: 100vh;
+    position: relative;
 }
 .sidebar >*{
-    display: inline-block;
+    display:inline-grid;
     font-family: sans-serif;
     font-weight: bold;
     color: antiquewhite;
+    gap: 10px;
+}
+.dashboard{
+    display: inline-block;
+}
+.dashboard h1{
+    display: inline-flex;
+    text-align: center;
+    font-weight:bolder;
+    font-style: normal;
+}
+.dashboard img{
+    width: auto;
+    height: auto;
+    max-width: 40px;
+    max-height: 40px;
+}
+.info{
+    display: grid;
+}
+.company-info{
+    display: grid;
+}
+.company-info>*{
+    display: grid;
+    margin-bottom: 16px;
+}
+.home{
+    display:grid;
+    grid-template-columns: min-content max-content;
+    align-items: center;
+}
+.home span{
+    display: inline-grid;
+    line-height: 35px;
+}
+.profile,
+.messages,
+.history,
+.tasks,
+.communities{
+    display: grid;
+    grid-template-columns: min-content max-content;
+    align-items: center;
 }
 img{
     width: auto;
     height: auto;
-    max-width: 30px;
-    max-height: 30px;
+    max-width: 35px;
+    max-height: 35px;
     margin-left: 30px;
     margin-right: 15px;
 }
+.technical{
+    display: grid;
+}
+.technical>*{
+    display: grid;
+    margin-bottom: 15px;
+}
+.settings,
+.support,
+.privacy{
+    display: grid;
+    grid-template-columns: min-content max-content;
+    align-items: center;
+}
 .header{
     display: grid;
+    background-color:darkkhaki;
+    grid-column: 2/3;
+    height: max-content;
 }
 .upper{
-    display: grid;
-    grid-column: 1fr 5fr 1fr 1fr 1fr;
-    grid-template-columns: 2/3;
-
-}
-.lower{
-    display: grid;
-    grid-column: 1fr 5fr 1fr 1fr 1fr;
-    grid-template-columns: 1/6;
+    display: inline-grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
 }
 .search-bar{
-    display: grid;
-    grid-column: 2/3;
+    grid-template-columns: 1/2;
+    max-width: 300px;
+    width: 100%;
 }
-.notification-bar {
+.lower{
     display: inline-grid;
-    grid-column: 2/3;
-}
-.profile-emoji{
-    display: grid;
-    grid-column: 2/3;
-}
-.name{
-    display: grid;
-    grid-column: 2/3;
-}
-.profile-emoji-b{
-    display: grid;
-    grid-column: 2/3;
-}
-.salutation{
-    display: grid;
-    grid-column: 2/3;
-}
-.buttons{
-    display: grid;
-    grid-column: 2/3;
+    grid-template-columns: 1fr 2fr 3fr;
+    padding: 30px;
 }
