@@ -8,11 +8,13 @@
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
+    height: 100vh;
 }
 .sidebar{
     display: grid;
+    grid-column: 1/2;
     background-color: blue;
-    height: 100vh;
+    min-height: 100vh;
 }
 .sidebar >*{
     display: inline-block;
@@ -27,4 +29,46 @@ img{
     max-height: 30px;
     margin-left: 30px;
     margin-right: 15px;
+}
+.header{
+    display: grid;
+}
+.upper{
+    display: grid;
+    grid-column: 1fr 5fr 1fr 1fr 1fr;
+    grid-template-columns: 2/3;
+
+}
+.lower{
+    display: grid;
+    grid-column: 1fr 5fr 1fr 1fr 1fr;
+    grid-template-columns: 1/6;
+}
+.search-bar{
+    display: grid;
+    grid-column: 2/3;
+}
+.notification-bar {
+    display: inline-grid;
+    grid-column: 2/3;
+}
+.profile-emoji{
+    display: grid;
+    grid-column: 2/3;
+}
+.name{
+    display: grid;
+    grid-column: 2/3;
+}
+.profile-emoji-b{
+    display: grid;
+    grid-column: 2/3;
+}
+.salutation{
+    display: grid;
+    grid-column: 2/3;
+}
+.buttons{
+    display: grid;
+    grid-column: 2/3;
 }
