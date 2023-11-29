@@ -13,7 +13,7 @@
 .sidebar{
     display: grid;
     grid-column: 1/2;
-    background-color: blue;
+    background-color:darkgreen;
     min-height: 100vh;
     position: relative;
 }
@@ -91,21 +91,90 @@ img{
 }
 .header{
     display: grid;
-    background-color:darkkhaki;
+    background-color:darkolivegreen;
+    font-family: sans-serif;
+    height: 20%;
     grid-column: 2/3;
-    height: max-content;
+    height: min-content;
+    grid-template-rows: 0.4fr 0.4fr;
+    grid-auto-flow: column;
 }
 .upper{
     display: inline-grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
+    align-items: center;
+    grid-template-columns: 3fr repeat(3,1fr);
 }
-.search-bar{
-    grid-template-columns: 1/2;
+.search-bar img{
+    display: grid;
+    justify-self: start;
     max-width: 300px;
-    width: 100%;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+}
+.notification-bar img{
+    display: grid;
+    grid-column: 2/3;
+    max-width: 40px;
+    max-height: 40px;
+    width: auto;
+    height: auto;
+    align-items: center;
+}
+.profile-emoji img{
+    display:grid;
+    align-items: center;
+    max-width: 70px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+    color: goldenrod;
+}
+.name{
+    display: grid;
+    align-items: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    font-weight: bold;
+    margin-left: 20px;
 }
 .lower{
     display: inline-grid;
+    align-items: center;
     grid-template-columns: 1fr 2fr 3fr;
-    padding: 30px;
+}
+.profile-emoji-b img{
+    display: grid;
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+}
+.salutation p{
+    display: grid;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    align-items: center;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    align-items: center;
+}
+.one,
+.two,
+.three{
+    display: grid;
+    padding: 8px;
+    border-radius: 12px;
+    border-color:darkslateblue;
+    font-family: monospace;
+    font-weight: bold;
+    background-color: darkturquoise;
+    color: black;
+}
+.three{
+    margin-right: 15px;
 }
