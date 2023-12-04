@@ -100,7 +100,7 @@ img{
 }
 .header{
     display: grid;
-    background-color:indigo;
+    background-color:blueviolet;
     border-radius: 12px;
     border: 4px;
     border-color: crimson;
@@ -235,6 +235,7 @@ svg{
     display:grid;
     background-color:blueviolet;
     border-radius: 12px;
+    border-left: 4px solid plum;
     margin-left: 4px;
     box-shadow: 0 0 5px rgba(0,0,0,.9), 2px 2px 5px rgba(0,0,0,.5);
     max-height: 224px;
@@ -303,6 +304,7 @@ svg{
 .announcement-1{
     display: grid;
     background-color: blueviolet;
+    border-left: 4px solid plum;
     grid-row: 2/3;
     margin-right: 28px;
     grid-column: 3/4;
@@ -318,6 +320,7 @@ svg{
 .announcement-2{
     display: grid;
     background-color: blueviolet;
+    border-left: 4px solid plum;
     margin-right: 28px;
     grid-row: 3/4;
     grid-column: 3/4;
@@ -328,6 +331,7 @@ svg{
     display: grid;
     margin-right: 28px;
     background-color: blueviolet;
+    border-left: 4px solid plum;
     grid-row: 4/5;
     grid-column: 3/4;
     border-radius: 6px;
@@ -357,7 +361,11 @@ svg{
 .trending-1{
     display: grid;
     grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 28px;
+    border-left: 4px solid plum;
     margin-left: 12px;
     border-radius: 6px;
     box-shadow: 0 0 5px rgba(0,0,0,.9), 2px 2px 5px rgba(0,0,0,.5);
@@ -365,6 +373,10 @@ svg{
 }
 .trending-2{
     display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 4px solid plum;
     grid-row: 3/4;
     margin-right: 28px;
     margin-left: 12px;
@@ -374,6 +386,10 @@ svg{
 }
 .trending-3{
     display: grid;
+    border-left: 4px solid plum;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 28px;
     margin-left: 12px;
     background-color: blueviolet;
@@ -384,6 +400,10 @@ svg{
 .trending-4{
     display: grid;
     background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 4px solid plum;
     margin-right: 28px;
     margin-left: 12px;
     border-radius: 6px;
