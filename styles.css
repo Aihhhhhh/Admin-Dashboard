@@ -17,7 +17,9 @@
     margin-right: 16px;
 }
 .sidebar{
-    border-radius: 24px;
+    border-radius: 4px;
+    margin-top: 4px;
+    border-top: 8px solid black;
     display: grid;
     grid-column: 1/2;
     grid-row: 1/-1;
@@ -101,9 +103,10 @@ img{
 .header{
     display: grid;
     background-color:blueviolet;
-    border-radius: 12px;
-    border: 4px;
-    border-color: crimson;
+    border-radius: 4px;
+    border-left: 4px solid black;
+    border-top: 2px solid black;
+    border-right: 4px solid black;
     margin-top: 4px;
     margin-right: 4px;
     font-family: sans-serif;
@@ -182,8 +185,10 @@ img{
 .three{
     display: grid;
     padding: 8px;
-    border-radius: 12px;
-    border-color:darkslateblue;
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+    border-radius: 2px;
+    border-color:black;
     font-family: monospace;
     font-weight: bold;
     background-color: darkturquoise;
@@ -198,7 +203,7 @@ main{
     grid-row: 2/3;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 6px;
-    background-color:rgb(86, 137, 189);
+    background-color:deeppink;
     border-radius: 16px;
     margin-top: 4px;
     margin-right: 4px;
@@ -235,7 +240,8 @@ svg{
     display:grid;
     background-color:blueviolet;
     border-radius: 12px;
-    border-left: 4px solid plum;
+    border-left: 4px solid black;
+    border-right: 2px solid palegreen;
     margin-left: 4px;
     box-shadow: 0 0 5px rgba(0,0,0,.9), 2px 2px 5px rgba(0,0,0,.5);
     max-height: 224px;
@@ -284,7 +290,9 @@ svg{
     display: inline;
     grid-column: 1/2;
 }
-
+.project-five,
+.project-six{
+    border-bottom: 4px solid black;}
 .svgs{
     display: flex;
     padding: 20px;
@@ -298,15 +306,18 @@ svg{
 .announcements{
     display: grid;
     grid-column: 3/4;
-    gap: 12px;
     grid-row: 1/4;
 }
 .announcement-1{
     display: grid;
     background-color: blueviolet;
-    border-left: 4px solid plum;
+    border-left: 4px solid black;
+    border-right: 4px solid palegreen;
+    border-top: 4px solid fuchsia;
+    border-bottom: 4px solid fuchsia;
     grid-row: 2/3;
-    margin-right: 28px;
+    margin-right: 8px;
+    margin-left: 12px;
     grid-column: 3/4;
     box-shadow: 0 0 5px rgba(0,0,0,.9), 2px 2px 5px rgba(0,0,0,.5);
     border-radius: 6px;
@@ -320,8 +331,11 @@ svg{
 .announcement-2{
     display: grid;
     background-color: blueviolet;
-    border-left: 4px solid plum;
-    margin-right: 28px;
+    border-left: 4px solid black;
+    border-right: 4px solid palegreen;
+    border-bottom: 4px solid fuchsia;
+    margin-right: 8px;
+    margin-left: 12px;
     grid-row: 3/4;
     grid-column: 3/4;
     border-radius: 6px;
@@ -335,13 +349,14 @@ svg{
 }
 .announcement-3{
     display: grid;
-    margin-right: 28px;
-    background-color: blueviolet;
-    border-left: 4px solid plum;
-    grid-row: 4/5;
-    grid-column: 3/4;
-    border-radius: 6px;
     margin-right: 8px;
+    margin-left: 12px;
+    background-color: blueviolet;
+    border-left: 4px solid black;
+    border-right: 4px solid palegreen;
+    grid-column: 3/4;
+    grid-row: 4/5;
+    border-radius: 6px;
     box-shadow: 0 0 5px rgba(0,0,0,.9), 2px 2px 5px rgba(0,0,0,.5);
 }
 .announcements h2{
@@ -361,7 +376,6 @@ svg{
     display: grid;
     grid-column: 3/4;
     grid-row: 4/5;
-    gap: 18px;
 }
 .trending h2{
     display: flex;
@@ -374,10 +388,13 @@ svg{
     font-family: "Chico",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     justify-content: center;
     align-items: center;
-    margin-right: 28px;
-    border-left: 4px solid plum;
+    margin-right: 8px;
+    border-left: 4px solid black;
     margin-left: 12px;
-    border-radius: 6px;
+    border-radius: 3px;
+    border-bottom: 2px solid black;
+    border-right: 4px solid palegreen;
+    border-top: 4px solid fuchsia;
     box-shadow: 0 0 5px rgba(0,0,0,.9), 2px 2px 5px rgba(0,0,0,.5);
     background-color: blueviolet;
 }
@@ -387,25 +404,29 @@ svg{
     font-family: "Chico",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     justify-content: center;
     align-items: center;
-    border-left: 4px solid plum;
+    border-left: 4px solid black;
     grid-row: 3/4;
-    margin-right: 28px;
+    margin-right: 8px;
     margin-left: 12px;
     background-color: blueviolet;
-    border-radius: 6px;
+    border-radius: 3px;
+    border-right: 4px solid palegreen;
+    border-bottom: 2px solid black;
     box-shadow: 0 0 5px rgba(0,0,0,.9), 2px 2px 5px rgba(0,0,0,.5);
 }
 .trending-3{
     display: grid;
-    border-left: 4px solid plum;
+    border-left: 4px solid black;
     font-family: "Chico",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 28px;
+    margin-right: 8px;
     margin-left: 12px;
     background-color: blueviolet;
-    border-radius: 6px;
+    border-right: 4px solid palegreen;
+    border-radius: 3px;
+    border-bottom: 2px solid black;
     grid-row: 4/5;
     box-shadow: 0 0 5px rgba(0,0,0,.9), 2px 2px 5px rgba(0,0,0,.5);
 }
@@ -416,10 +437,13 @@ svg{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 4px solid plum;
-    margin-right: 28px;
+    border-left: 4px solid black;
+    border-right: 4px solid palegreen;
+    margin-right: 8px;
     margin-left: 12px;
-    border-radius: 6px;
+    margin-bottom: 6px;
+    border-radius: 3px;
+    border-bottom: 4px solid black;
     grid-row: 5/6;
     box-shadow: 0 0 5px rgba(0,0,0,.9), 2px 2px 5px rgba(0,0,0,.5);
 }
